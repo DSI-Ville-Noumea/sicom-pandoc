@@ -1,0 +1,26 @@
+---
+title: "sicom - DSI Ville de Nouméa"
+author: "author1"
+date: 2017-02-20
+subject: "Manuel utilisateur"
+tags: [Ville Nouméa, Application]
+wrap: preserve
+documentclass:
+    - scrbook
+header-includes:
+    - \usepackage{paralist}
+    - \usepackage{booktabs}
+    - \usepackage{numprint, xspace, paralist}
+    - \usepackage{hyperref}
+    - \usepackage{cleveref}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{XCharter}
+    - \usepackage{sourcecodepro}
+    - \usepackage{fixltx2e}
+    - \usepackage[expert]{mathdesign}
+    - \usepackage{bera}
+    - \usepackage[T1]{fontenc}
+    - \usepackage{microtype}
+    - \usepackage{epigraph}
+    - \usepackage[top=1.5cm, bottom=2cm, left=1cm, right=1cm]{geometry}
+...
