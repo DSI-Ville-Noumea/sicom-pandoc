@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>nc.noumea.mairie</groupId>
     <artifactId>sicom-pandoc</artifactId>
-    <version>1.00.00</version>
+    <version>1.00.00-SNAPSHOT</version>
 
     <name>The sicom-pandoc Project</name>
     <description>The Pandoc documentation for sicom project</description>
