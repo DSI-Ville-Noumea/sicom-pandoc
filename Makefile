@@ -7,7 +7,7 @@ TOC = --toc --toc-depth=3
 COVER_IMAGE = images/sicom.jpg
 
 BOOKNAME_USER = doc_utilisateur
-CHAPTERS_USER = chapitres/chap_01.md chapitres/chap_02.md
+CHAPTERS_USER = chapitres/01_connexion.md chapitres/02_utilisateurs.md
 
 all: book
 
