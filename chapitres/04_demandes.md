@@ -49,4 +49,5 @@ Pour réinitialiser le tri une fois enclanché, il faut fermer l'onglet des dema
 
 ## S'assigner une demande
 
-TODO !!
+Il est possible de s'assigner une demande depuis la liste des demandes en cliquant sur le bouton 
+![Connexion](images/chap_04/assigner_demande.png "Connexion").
