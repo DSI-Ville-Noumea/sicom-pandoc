@@ -51,3 +51,47 @@ Pour réinitialiser le tri une fois enclanché, il faut fermer l'onglet des dema
 
 Il est possible de s'assigner une demande depuis la liste des demandes en cliquant sur le bouton 
 ![Connexion](images/chap_04/assigner_demande.png "Connexion").
+
+
+## Pièces jointes
+
+Il est possible d'ajouter des pièces jointes à la demande. 
+
+Ces pièces jointes doivent respecter les formats acceptés, à savoir : jpg, jpeg, png, pdf et zip.
+Les autres formats ne sont pas reconnus.
+
+
+## Planifications
+
+Plusieurs dates de planification peuvent être renseignées. Actuellement, il est obligatoire d'en renseigner au moins une. Les dates ne peuvent être saisies dans le passé, ça n'aurait aucun sens pour une planification d'envoi de mail.
+
+
+## Annotations
+
+Des annotations peuvent être ajoutées aux demandes. Elles ne peuvent être saisies qu'une fois la demande créée (hors brouillon), et peuvent être éditées et supprimées.
+
+Ces annotations sont visibles dans l'onglet d'édition d'une demande. Elles peuvent servir de note, de pense-bête etc ...
+
+
+## Etat de la demande
+
+L'état de la demande est renseigné sur l'écran d'édition d'une demande, en blanc sur fond vert, en haut au centre de la page.
+
+
+## Validations
+
+Lorsqu'une demande est à l'état 'A approuver', l'onglet 'Validations' apparaît. Il est possible d'ajouter ou de supprimer des validateurs associés à une demande.
+Lorsqu'un validateur a fait un choix en cliquant sur l'icône à côté de son nom, il n'est plus possible de le modifier ! Ce validateur ne peut plus être supprimé.
+Les validations seront amenées  àautoriser ou non le passage de la demande à l'état suivant (cf. chapitre suivant sur le workflow du statut des demandes)
+
+
+## Historique
+
+Les modifications suivantes sont tracées pour chaque demande, et présentes dans l'onglet 'Historique' : 
+- Ajout/suppression d'un validateur
+- Changement d'état
+- Ajout/suppression d'une pièce jointe
+- Ajout/modification/suppression d'une annotation
+- Ajout/suppression d'une date de planification
+
+Il est possible de filtrer ces historiques en fonction du type d'évenement.
