@@ -14,3 +14,15 @@ On peut ajouter des destinataires :
 
 On peut choisir un template pour définir le corps du mail à envoyer. Les templates sont administrables dans le menu d'admnistration des templates.
 
+
+## Edition rich text
+
+On peut éditer le format du mail grâce aux outil situés dans la barre d'outil de l'éditeur.
+
+## Prévisualisation
+
+On peut prévisualiser grâce à l'outil de prévisualisation de la barre d'outil de l'éditeur.
+
+## Agrandir la zone d'édition
+
+On peut agrandir la zone d'édition grâce à l'outil de la barre d'outil de l'éditeur prévu à cet effet.
