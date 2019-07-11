@@ -95,3 +95,14 @@ Les modifications suivantes sont tracées pour chaque demande, et présentes dan
 - Ajout/suppression d'une date de planification
 
 Il est possible de filtrer ces historiques en fonction du type d'évenement.
+
+## Liste des destinataires
+
+Vous pouvez choisir les destinataires parmi les listes de diffusion créées dans le menu d'administration.
+Il est également possible de rajouter des destinataires à partir des utilisateurs de l'application, de listes disponibles dans exchange, 
+ainsi que des destinataires ajoutés à la main. Pour ces derniers vous devrez séparer chaque adresse email par une virgule dans la zone de texte "Autres".
+
+## Mise en Forme
+
+Il est possible de mettre en forme le corps du mail en choisissant un template créé préalablement dans le menu d'administration des template. 
+
