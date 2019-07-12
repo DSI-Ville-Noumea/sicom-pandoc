@@ -18,3 +18,17 @@ Les boutons sont situés en haut à droite de l'écran. A chaque changement d'é
 Lorsqu'une demande passe à l'état 'Incomplet', l'utilisateur doit spécifier pourquoi la demande est incomplète.
 Ce message est présent dans l'historique du changement d'état.
 La demande est ensuite automatiquement assignée au demandeur.
+
+## Mails d'information
+
+Lors des changement d'état, des mails sont envoyés aux destinataires concernés : 
+
+* "A qualifier" -> "Incomplet" : au **demandeur**
+* "Incomplet" -> "A qualifier" : au **CDS**
+* "Mise en forme" -> "A valider" : au **demandeur**
+* "Mise en forme" -> "Planifié" : au **demandeur**
+* "A valider" -> "Mise en forme" : au **CDS**
+* "A valider" -> "A approuver" : aux **validateurs**
+* "A approuver" -> "Mise en forme" : au **CDS**
+* "A approuver" -> "Planifié" : au **demandeur** et au **CDS**
+* "*" -> "Annulé" : au **demandeur** et au **CDS**

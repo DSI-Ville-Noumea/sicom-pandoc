@@ -10,3 +10,7 @@ Dans l'administration on peut créer, supprimer et modifier des types de demande
 On peut créer et supprimer des sous-types de demandes à partir des types de demandes.
 Dans chaque sous-type il faut renseigner le nom, l'importance, le délai de validation ainsi que la liste des validateurs choisis parmi les utilisateurs de l'application.
 
+## Utilisation
+
+Le type et le sous-type peuvent être sélectionnés depuis les onglets de création et de modification d'une demande.
+

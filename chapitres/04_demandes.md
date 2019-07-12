@@ -16,6 +16,11 @@ La navigation entre les étapes se fait avec les boutons 'Suivant' et 'Précéde
 
 **Important** : en cliquant sur le bouton 'Suivant', les modifications apportées sont automatiquement sauvegardées.
 
+Chaque demande créer possède un numéro construit ainsi : 
+année de création + / + D + incrément sur 4 caractères.
+
+_ex : "2019/D0001", "2019/D0002", ..._
+
 ## Modification
 
 Pour modifier les informations d'une demande, il faut double cliquer sur la demande en question.
@@ -91,7 +96,7 @@ Les modifications suivantes sont tracées pour chaque demande, et présentes dan
 - Ajout/suppression d'un validateur
 - Changement d'état
 - Ajout/suppression d'une pièce jointe
-- Ajout/modification/suppression d'une annotation
+- Ajout/suppression d'une annotation
 - Ajout/suppression d'une date de planification
 
 Il est possible de filtrer ces historiques en fonction du type d'évenement.
@@ -106,3 +111,12 @@ ainsi que des destinataires ajoutés à la main. Pour ces derniers vous devrez s
 
 Il est possible de mettre en forme le corps du mail en choisissant un template créé préalablement dans le menu d'administration des template. 
 
+## Mails importants
+
+Lors de la création d'une demande, il est possible de cocher la case "Imporant". Si cette case est cochée, les mails envoyés pour cette demande auront un "flag" important lors de la récéption sur les divers clients mail.
+Ces mails incluent : les informations de changement d'état, ainsi que les mails planifiés.
+
+## Copie d'une demande
+
+Depuis la liste des demandes, il est possible de copier toutes les informations d'une demande, pour en créer une nouvelle.
+Les fichiers sont aussi copiés lors de cette manipulation. La nouvelle demande est créée à l'état de brouillon.
