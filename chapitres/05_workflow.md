@@ -3,7 +3,7 @@
 
 ## Diagramme
 
-![diagramme](images/chap_05/workflow.jpg "Connexion").
+![diagramme](images/chap_05/workflow.pdf "Connexion").
 
 ## Processus
 
