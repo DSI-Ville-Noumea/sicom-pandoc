@@ -29,3 +29,8 @@ Le nom du fichier apparaît dans la liste du dessous, cliquez sur le bouton "+" 
 ## Supprimer une image du template
 
 Cliquez sur l'image dans l'éditeur et appuyez sur la touche 'suppr'
+
+
+## Dupliquer un template
+
+Il est possible de dupliquer un tempalte en cliquant sur l'icône de duplication situé en bout de ligne à droite dans la liste des template.

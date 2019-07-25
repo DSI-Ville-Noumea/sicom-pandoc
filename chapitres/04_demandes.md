@@ -109,7 +109,15 @@ ainsi que des destinataires ajoutés à la main. Pour ces derniers vous devrez s
 
 ## Mise en Forme
 
-Il est possible de mettre en forme le corps du mail en choisissant un template créé préalablement dans le menu d'administration des template. 
+Vous pouvez sélectionner un template pour charger le template. 
+Sont affichées dans le menu de droite :
+- les images du template selectionné
+- les images de la demande
+On peut insérer une image à la fin du message en cliquant sur l'icône [+] . Pour supprimer une image de la demande rendez vous dans l'onglet "Corps"
+A gauche on a :
+- le type de la demande
+- le sujet de la communication souhaité par le demandeur
+- le message souhaité par le demandeur
 
 ## Mails importants
 
@@ -120,3 +128,9 @@ Ces mails incluent : les informations de changement d'état, ainsi que les mails
 
 Depuis la liste des demandes, il est possible de copier toutes les informations d'une demande, pour en créer une nouvelle.
 Les fichiers sont aussi copiés lors de cette manipulation. La nouvelle demande est créée à l'état de brouillon.
+
+
+## Images d'une demande
+
+Il est possible de choisir de nouvelle images à insérer dans le corps du message dans l'onglet "Corps". Cliquez sur importer et choisissez une image.
+Vous pouvez supprimer l'image si elle n'est pas utilisée en cliquant sur l'icône poubelle.
