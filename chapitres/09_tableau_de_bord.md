@@ -16,7 +16,15 @@ Pour visualiser les demandes par état. Il est possible d'éditer une demande en
 ## Alertes
 
 Permet de visualiser les alertes de l'application et d'y accéder en 1 click.
+- Demande non validées dans les délais définis dans le sous-type de la demande
+- Demande planifiée non envoyée malgré la date d'envoi dépassée
+- Demande ayant une planification prévu dans moins de X jours mais toujours pas planifiée
+
 
 ## Envois planifiés
 
 Permet de visualiser les prochains envois de demandes planifiées et partiellement envoyée.
+
+## Créer une demande
+
+On peut créer une demande à partir du bouton "+Créer" au dessus du Kanban

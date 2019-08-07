@@ -119,10 +119,10 @@ A gauche on a :
 - le sujet de la communication souhaité par le demandeur
 - le message souhaité par le demandeur
 
-## Mails importants
+## Mails urgents
 
-Lors de la création d'une demande, il est possible de cocher la case "Imporant". Si cette case est cochée, les mails envoyés pour cette demande auront un "flag" important lors de la récéption sur les divers clients mail.
-Ces mails incluent : les informations de changement d'état, ainsi que les mails planifiés.
+Lors de la création d'une demande, il est possible de cocher la case "Urgent" pour préciser que la demande est à traiter dans les meilleurs délais.
+Dans ce cas l'utilisateur n'a pas besoin de renseigner une date de planification
 
 ## Copie d'une demande
 
@@ -134,3 +134,8 @@ Les fichiers sont aussi copiés lors de cette manipulation. La nouvelle demande 
 
 Il est possible de choisir de nouvelle images à insérer dans le corps du message dans l'onglet "Corps". Cliquez sur importer et choisissez une image.
 Vous pouvez supprimer l'image si elle n'est pas utilisée en cliquant sur l'icône poubelle.
+
+
+## Planification importante
+
+Une planification importante sera envoyée avec un flag [IMPORTANT] dans son mail de communication.
