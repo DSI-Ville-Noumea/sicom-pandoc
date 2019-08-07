@@ -133,6 +133,8 @@ A gauche on a :
 Une utilisateur peut créer une "Demande urgente". Dans ce cas, il n'est pas nécessaire de renseigner de 
 date de planification. L'envoi doit partir au plus tôt, et les étapes de validations sont outrepassées
 
+Les demandes urgentes apparaîssent avec un pictogramme rouge dans le kaban et la liste des demandes.
+
 ## Copie d'une demande
 
 Depuis la liste des demandes, il est possible de copier toutes les informations d'une demande, pour en créer une nouvelle.
@@ -148,3 +150,4 @@ Vous pouvez supprimer l'image si elle n'est pas utilisée en cliquant sur l'icô
 ## Planification importante
 
 Une planification importante sera envoyée avec un flag [IMPORTANT] dans son mail de communication.
+Les demandes avec une planification importante apparaîssent avec un pictogramme bleu dans le kanban et la liste des demandes.

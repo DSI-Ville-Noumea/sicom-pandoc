@@ -7,7 +7,6 @@ Dans le menu d'administration cliquez sur le sous menu 'Templates'. Cliquez ensu
 Vous pouvez avoir un aperçu du rendu HTML grâce au bouton 'Preview'
 
 
-
 ## Modification
 
 Dans le menu d'administration, dans le sous menu 'Templates', double cliquez sur un template dans la liste des templates.
@@ -18,7 +17,7 @@ Le template s'ouvre dans un nouvel onglet. Appliquez vos modifications et clique
 
 Dans le menu d'administration, dans le sous menu 'Templates', double cliquez sur un template dans la liste des templates. 
 Le template s'ouvre dans un nouvel onglet. Cliquez sur le bouton "Supprimer".
-
+Il n'est pas possible de supprimer une template si une de ses images est utilisée dans une demande.
 
 ## Ajouter une image au template
 
@@ -28,7 +27,7 @@ Le nom du fichier apparaît dans la liste du dessous, cliquez sur le bouton "+" 
 
 ## Supprimer une image du template
 
-Cliquez sur l'image dans l'éditeur et appuyez sur la touche 'suppr'
+Cliquez sur l'image dans l'éditeur et appuyez sur la touche 'suppr'. Il n'est pas possible de supprimer une image is elle est utilisée dans un template ou dans une demande.
 
 
 ## Dupliquer un template
