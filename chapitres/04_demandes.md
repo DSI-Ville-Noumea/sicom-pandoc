@@ -72,8 +72,8 @@ Les autres formats ne sont pas reconnus.
 
 ## Planifications
 
-Plusieurs dates de planification peuvent être renseignées. Actuellement, il est obligatoire d'en renseigner au moins une. Les dates ne peuvent être saisies dans le passé, ça n'aurait aucun sens pour une planification d'envoi de mail.
-
+Plusieurs dates de planification peuvent être renseignées. Actuellement, il est obligatoire d'en renseigner au moins une sauf si la dmeande est urgente. Les dates ne peuvent être saisies dans le passé, ça n'aurait aucun sens pour une planification d'envoi de mail.
+Il n'est pas possible de supprimer une planification déjà envoyée.
 
 ## Annotations
 
@@ -87,6 +87,31 @@ Ces annotations sont visibles dans l'onglet d'édition d'une demande. Elles peuv
 Les étapes des états d'une demande sont présentes une fois la demande créée.
 Elles apparaissent en haut de la page d'édition d'une demande.
 
+## Changement d'état
+
+Les demandes change d'état au fil de leur vie. Dans la fenêtre d'édition des demandes les boutons qui apparaissent à droite sous le workflow permettent de modifier l'état de la demande.
+
+Dans le récapitulatif : 
+- Terminer : Brouillon -> A Qualifier
+- Approuver (pour le demandeur) : A vérifier -> A valider
+- Valider (pour le dernier validateur) : A valider -> Planifié 
+- Rejeter (pour les validateurs) : A valider -> A mettre en forme (réinitialise les validations)
+
+Dans l'édition de demande :
+- Demande incomplète : A qualifier -> Brouillon
+- Pour mise en forme : A qualifier -> A mettre en forme
+- Pour vérification : A mettre en forme -> A Vérifier
+- Pour planification sans validation : A mettre en forme -> Planifié
+- Pour validation : A vérifier -> A Valider
+- Demande invalide : A valider -> A mettre en forme (réinitialise les validations)
+- Demande Valide, à planifier : A valider -> Planifié
+- Annuler : de n'importe quel état vers l'état Annulé
+- Clôturé (uniquement accessible à l'état Planifié ou Partiellement envoyé) : -> Clôturé
+
+Un job tourne toutes les 15 minutes pour envoyer les demandes planifiées. Lorsque la demande est envoyée, si elle possède d'autres dates de planifications elle passe alors à l'état Partiellement Envoyée.
+Lorsque tous les envois ont été fait pour une demande, elle passe à l'état Clôturé.
+
+
 
 ## Validations
 
@@ -94,6 +119,10 @@ Les validateurs d'une demande sont ajoutés lors de la création de la demande.
 Ils sont définis par le sous-type de la demande.
 Les agents CDS peuvent aussi ajouter ou de supprimer des validateurs via l'écran d'édition d'une demande.
 
+
+## Valider une demande
+Pour une demandeur : dans l'écran de la demande lorsqu'elle est à l'état "A valider" cliquer sur le bouton Valider. Il est possible de laisser un commentaire qui sera envoyé directement au Centre de Services.
+Pour un agent du CDS : dans l'écran de la demande lorsqu'elle est à l'état "A valider" cliquer sur "Demande Valide, à planifier" (attention ce bouton court circuite les validations des validateurs)
 
 ## Historique
 
@@ -112,9 +141,15 @@ Il est possible de filtrer ces historiques en fonction du type d'évenement.
 
 ## Liste des destinataires
 
-Vous pouvez choisir les destinataires parmi les listes de diffusion créées dans le menu d'administration.
-Il est également possible de rajouter des destinataires à partir des utilisateurs de l'application, et de listes disponibles dans exchange, 
-ainsi que des destinataires ajoutés à la main. Pour ces derniers vous devrez séparer chaque adresse email par une **virgule** dans la zone de texte "Autres".
+Demandeur :
+- les listes de diffusion exchange (la recherche dans les listes se fait à partir de 1 caractères renseigné)
+- des destinataires ajoutés à la main. Pour ces derniers vous devrez séparer chaque adresse email par une **virgule** dans la zone de texte "Autres".
+
+Agent CDS :
+Vous pouvez choisir les destinataires parmi 
+- les listes de diffusion exchange 
+- les listes de diffusion sicom créées dans le menu d'administration.
+- des destinataires ajoutés à la main. Pour ces derniers vous devrez séparer chaque adresse email par une **virgule** dans la zone de texte "Autres".
 
 ## Mise en Forme
 
@@ -125,14 +160,19 @@ Sont affichées dans le menu de droite :
 On peut insérer une image à la fin du message en cliquant sur l'icône [+] . Pour supprimer une image de la demande rendez vous dans l'onglet "Corps"
 A gauche on a :
 - le type de la demande
+- le sous type de la demande
+- les sites et/ou application impactés
 - le sujet de la communication souhaité par le demandeur
 - le message souhaité par le demandeur
+
+On peut copier ces informations directement en cliquant sur le bouton à gauche de l'information.
+
 
 ## Demande urgente
 
 Une utilisateur peut créer une "Demande urgente". Dans ce cas, il n'est pas nécessaire de renseigner de 
 date de planification. L'envoi doit partir au plus tôt, et les étapes de validations sont outrepassées
-
+Une demande est urgente par défaut si son sous type est défini comme urgent.
 Les demandes urgentes apparaîssent avec un pictogramme rouge dans le kaban et la liste des demandes.
 
 ## Copie d'une demande
@@ -145,7 +185,7 @@ Les fichiers sont aussi copiés lors de cette manipulation. La nouvelle demande 
 
 Il est possible de choisir de nouvelle images à insérer dans le corps du message dans l'onglet "Corps". Cliquez sur importer et choisissez une image.
 Vous pouvez supprimer l'image si elle n'est pas utilisée en cliquant sur l'icône poubelle.
-
+Les formats valides sont : jpeg, jpg et png.
 
 ## Planification importante
 

@@ -11,7 +11,12 @@ Pour rechercher une demande
 
 Pour visualiser les demandes par état. Il est possible d'éditer une demande en cliquant dessus, et d'avoir les informations des destinataires
  et des dates d'envoi en passant la souris dessus.
- Une icône triangulaire "!" indique les demande ayant une planification importante à venir.
+Une icône triangulaire "!" indique les demande ayant une planification importante à venir.
+Les demandes sont triée par date de prochaine planification.
+
+## Validations
+
+A partir de l'état à valider on affiche les validations au format suivant : x/y . Si l'information apparaît en vert elle indique vous l'utilisateur connecté a déjà validé la demande.
 
 ## Alertes
 
@@ -28,3 +33,8 @@ Permet de visualiser les prochains envois de demandes planifiées et partielleme
 ## Créer une demande
 
 On peut créer une demande à partir du bouton "+Créer" au dessus du Kanban
+
+## Rafraîchissement
+
+Le tableau de bord est rafraîchit lorsque l'on clique sur l'onglet tableau de bord ou lorsque l'on ferme le dernier onglet ouvert.
+
