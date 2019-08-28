@@ -1,5 +1,7 @@
 
-# Paramétrage
+# Paramétrage  
+![Parametrage](images/chap_09/parametrage.png "Paramétrage")
+
 
 ## NOMBRE_JOUR_ENVOI_PROCHE
 
