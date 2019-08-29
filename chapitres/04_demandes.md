@@ -15,7 +15,7 @@ La navigation entre les étapes se fait avec les boutons 'Suivant' et 'Précéde
 
 **Important** : en cliquant sur le bouton 'Suivant', les modifications apportées sont automatiquement sauvegardées.
 
-Chaque demande créer possède un numéro construit ainsi : 
+Chaque demande créée possède un numéro construit ainsi : 
 année de création + / + D + incrément sur 4 caractères.  
 _ex : "2019/D0001", "2019/D0002", ..._  
 ![Créer une demande](images/chap_04/popup_creer_demande.png "Créer une demande"){width=80%}
@@ -34,7 +34,10 @@ Il est possible de supprimer l'image en cliquant sur l'icône poubelle et de la 
 Il est possible d'ajouter des pièces jointes à la demande. 
 
 Ces pièces jointes doivent respecter les formats acceptés, à savoir : jpg, jpeg, png, pdf et zip.
-Les autres formats ne sont pas reconnus.  
+Les autres formats ne sont pas reconnus.
+
+La taille totale des pièces jointes ne peut pas dépasser les 4mo.
+
 ![Ajout de pièce jointe](images/chap_04/ajout_pj.png "Ajout de pièce jointe").
 
 
@@ -67,8 +70,8 @@ Il n'est pas possible de récupérer les informations d'une demande supprimée !
 Il est possible de filter la liste des demandes, en fonction des champs présents dans le panel "Filtres de recherche".  
 ![Filtes](images/chap_04/filtres.png "Filtes")
 
-Les demandes peuvent être triées en cliquant sur le bouton "Filtrer" une fois les critères de tri sélectionnés.
-Pour réinitialiser le tri une fois enclenché, cliquez sur "Vider filtres".
+Les demandes peuvent être filtrées en cliquant sur le bouton "Filtrer" une fois les critères de filtrage sélectionnés.
+Pour réinitialiser le filtre une fois enclenché, cliquez sur "Vider filtres".
 
 ## Trier les demandes
 Les demandes peuvent être triées en cliquant sur la colonne voulue. Un double clic permet d'inverser le tri.
@@ -77,9 +80,11 @@ Pour réinitialiser le tri une fois enclenché, rafraîchissez la page.
 
 ## S'assigner une demande
 Il est possible de s'assigner une demande depuis la liste des demandes en cliquant sur le bouton ![Connexion](images/chap_04/assigner_demande.png "Connexion"){ width=25% }.
+Cette assignation est uniquement disponible pour les agents du CDS, et sert simplement d'information. Ca n'a aucun impact concernant la demande en elle-même.
 
 ## Annotations
-Des annotations peuvent être ajoutées aux demandes. Elles ne peuvent être saisies qu'une fois la demande créée (hors brouillon), et peuvent être éditées et supprimées.
+Des annotations peuvent être ajoutées aux demandes par les agents du CDS. 
+Elles ne peuvent être saisies qu'une fois la demande créée (hors brouillon), et peuvent être supprimées. En revanche, il n'est pas possible d'éditer une annotation.
 
 Ces annotations sont visibles dans l'onglet d'édition d'une demande. Elles peuvent servir de note, de pense-bête etc ...  
 ![Annotations](images/chap_04/annotations.png "Annotations").
@@ -90,15 +95,19 @@ Elles apparaissent en haut de la page d'édition d'une demande.
 ![Etats](images/chap_04/etat_demande.png "Etats")
 
 ## Changement d'état
-Les demandes change d'état au fil de leur vie. Dans la fenêtre d'édition des demandes les boutons qui apparaissent à droite sous le workflow permettent de modifier l'état de la demande.
+Les demandes changent d'état au fil de leur vie. 
 
-Dans le récapitulatif : 
+Dans la fenêtre d'édition des demandes, certains boutons permettent de modifier l'état de la demande : 
+
+Pour les demandeurs, dans le récapitulatif des demandes : 
+
 - Terminer : Brouillon -> A Qualifier
 - Approuver (pour le demandeur) : A vérifier -> A valider
 - Valider (pour le dernier validateur) : A valider -> Planifié 
 - Rejeter (pour les validateurs) : A valider -> A mettre en forme (réinitialise les validations)
 
-Dans l'édition de demande :
+Pour les agents CDS, dans l'édition d'une demande, en haut à droite de l'écran :
+
 - Demande incomplète : A qualifier -> Brouillon
 - Pour mise en forme : A qualifier -> A mettre en forme
 - Pour vérification : A mettre en forme -> A Vérifier
@@ -118,15 +127,16 @@ Les agents CDS peuvent aussi ajouter ou de supprimer des validateurs via l'écra
 ![Validateurs](images/chap_04/ajouter_validateur.png "Validateurs"){width=80%}
 
 ## Valider une demande
-Pour un Validateur : dans l'écran de la demande lorsqu'elle est à l'état "A valider" cliquer sur le bouton "Valider". Il est possible de laisser un commentaire qui sera envoyé directement au Centre de Services.
-Le bouton "Rejeter" vous permet de rejeter la demande. Un commentaire vous sera demandé le cas échéant.  
+Pour un Validateur : dans l'écran d'édition de la demande lorsqu'elle est à l'état "A valider" cliquer sur le bouton "Valider". Il est possible de laisser un commentaire qui sera envoyé directement au Centre de Services.
+Le bouton "Rejeter" vous permet de rejeter la demande, afin qu'elle soit retravaillée par le CDS. Un commentaire vous sera demandé le cas échéant.  
 ![Valider](images/chap_04/bouton_valider.png "Valider"){width=30%}
 
-Pour un agent du CDS : dans l'écran de la demande lorsqu'elle est à l'état "A valider" cliquer sur "Demande Valide, à planifier" (attention ce bouton court circuite les validations des validateurs).  
+Pour un agent du CDS : dans l'écran de la demande lorsqu'elle est à l'état "A valider" cliquer sur "Demande Valide, à planifier" (attention ce bouton court circuite les validations de tous les validateurs).  
 ![Valider CDS](images/chap_04/bouton_valider_cds.png "Valider CDS"){ width=80% }
 
 ## Historique
 Les modifications suivantes sont tracées pour chaque demande, et présentes dans l'onglet 'Historique' : 
+
 - Création d'une demande
 - Ajout/suppression d'une pièce jointe
 - Ajout/suppression d'une annotation
@@ -138,6 +148,8 @@ Les modifications suivantes sont tracées pour chaque demande, et présentes dan
 - Envoi manuel de mail
 
 Il est possible de filtrer ces historiques en fonction du type d'évenement.
+
+L'historique apparaît aussi dans le récapitulatif d'une demande.
 
 ## Liste des destinataires
 Demandeur :
@@ -153,9 +165,7 @@ Agent CDS :
 Vous pouvez choisir les destinataires parmi 
 
 - les listes de diffusion sicom créées dans le menu d'administration.
-
 - les listes de diffusion exchange
-
 - des destinataires ajoutés à la main. Pour ces derniers vous devrez séparer chaque adresse email par une **virgule** dans la zone de texte "Autres".
 
 Le souhait du demandeur est affiché en grisé au dessus dans "Demande initiale".  
@@ -163,21 +173,21 @@ Le souhait du demandeur est affiché en grisé au dessus dans "Demande initiale"
 
 
 ## Mise en Forme  
-Vous pouvez sélectionner un template pour charger le template. 
+Vous pouvez sélectionner un template pour créer le corps de la communication.
+ 
 Sont affichées dans le menu de droite :
+
 - les images du template selectionné
 - les images de la demande
+
 On peut insérer une image à la fin du message en cliquant sur l'icône [+] . Pour supprimer une image de la demande rendez vous dans l'onglet "Corps"
+
 A gauche on a :
 
 - le type de la demande
-
-- le sous type de la demande
-
-- les sites et/ou application impactés
-
+- le sous-type de la demande
+- les sites et/ou application impactées
 - le sujet de la communication souhaité par le demandeur
-
 - le message souhaité par le demandeur
 
 On peut copier ces informations directement en cliquant sur le bouton à gauche de l'information.  
@@ -187,9 +197,9 @@ On peut copier ces informations directement en cliquant sur le bouton à gauche 
 Une utilisateur peut créer une "Demande urgente". Dans ce cas, il n'est pas nécessaire de renseigner de 
 date de planification. L'envoi doit partir au plus tôt, et les étapes de validations sont outrepassées
 
-Une demande est urgente par défaut si son sous type est défini comme urgent.
+Une demande est urgente par défaut si son sous-type est défini comme urgent.
 
-Les demandes urgentes apparaîssent avec un pictogramme rouge dans le kaban et la liste des demandes.
+Les demandes urgentes apparaissent avec un pictogramme rouge dans le kaban et la liste des demandes.
 
 ## Copie d'une demande
 Depuis la liste des demandes, il est possible de copier toutes les informations d'une demande, pour en créer une nouvelle.
@@ -198,13 +208,13 @@ Les fichiers sont aussi copiés lors de cette manipulation. La nouvelle demande 
 
 
 ## Images d'une demande
-Il est possible de choisir de nouvelle images à insérer dans le corps du message dans l'onglet "Corps". Cliquez sur importer et choisissez une image.
+Il est possible de choisir de nouvelles images à insérer dans le corps du message dans l'onglet "Corps". Cliquez sur importer et choisissez une image.
 
 Vous pouvez supprimer l'image si elle n'est pas utilisée en cliquant sur l'icône poubelle.
 
-Les formats valides sont : jpeg, jpg et png.
+Les formats valides sont : jpeg, jpg, pdf et png.
 
 ## Planification importante
 Une planification importante sera envoyée avec un flag [IMPORTANT] dans son mail de communication.
-Les demandes avec une planification importante apparaîssent avec un pictogramme bleu dans le kanban.  
+Les demandes avec une planification importante apparaissent avec un pictogramme bleu dans le kanban.  
 ![Planification importante](images/chap_04/planification_important.png "Planification Importante"){ width=30% }

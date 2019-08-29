@@ -1,6 +1,6 @@
 
 # Connexion
-Pour vous connecter à l'application, rendez-vous à l'adresse [http://sicom.site-mairie.noumea.nc/](http://appock.site-mairie.noumea.nc/ "http://appock.site-mairie.noumea.nc/").
+Pour vous connecter à l'application, rendez-vous à l'adresse [http://sicom.site-mairie.noumea.nc/](http://sicom.site-mairie.noumea.nc/ "http://appock.site-mairie.noumea.nc/").
 La page de connexion suivante apparait :  
 ![Connexion](images/chap_01/connexion.jpg "Connexion"){width=70%}
 

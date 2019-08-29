@@ -3,7 +3,8 @@
 
 ## Liste des templates
 
-La liste des templates affiche par défaut les templates actifs
+La liste des templates affiche par défaut les templates actifs.
+Pour afficher les templates inactifs, il faut cliquer sur la coche à côté de l'en-tête de colonne "Inactif"
 
 ## Création
 
@@ -41,7 +42,7 @@ Il n'est pas possible de supprimer une template si une de ses images est utilis�
 
 Lorsque vous créez ou que vous modifiez un template vous pouvez importer une image à vous. Cliquez sur le bouton "Ajouter", selectionnez une image, puis appuyez sur "Ouvrir".
 Le nom du fichier apparaît dans la liste du dessous, cliquez sur le bouton "+" à côté de celui-ci pour importer l'image dans le template.  
-![Ajouter image](images/chap_03/edit_template_agrandir.png "Ajouter image"){ width=5% }  : Ajouter image
+![Ajouter image](images/chap_03/edit_template_ajouter_image.png "Ajouter image"){ width=5% }  : Ajouter image
 
 
 ## Supprimer une image du template

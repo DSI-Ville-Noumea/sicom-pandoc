@@ -2,7 +2,7 @@
 # Workflow des demandes
 
 ## Processus
-Toutes les demandes à l'état brouillon peuvent être supprimées. Une fois qu'une demande est envoyée (c.a.d passée à l'état 'A qualifier') elle ne peut plus être supprimée, mais peut prendre le status 'Annulé' à tout moment.
+Toutes les demandes à l'état brouillon peuvent être supprimées. Une fois qu'une demande est terminée (c.a.d passée à l'état 'A qualifier') elle ne peut plus être supprimée. Elle pourra toujours être 'Annulé' à tout moment par les agents du CDS.
 
 Le changement d'état d'une demande se fait via l'écran d'édition d'une demande pour les agents du CDS.
 Les boutons sont situés en haut à droite de l'écran. A chaque changement d'étape, une fenêtre vient demander confirmation. Les changement d'état sont historisés dans la demande.
@@ -21,6 +21,7 @@ Il suffit qu'un seul approbateur refuse la demande pour qu'elle retourne à mett
 
 ## Planification
 Une demande peut être planifiée de deux manières différentes.  
+
 * traditionnelle : Lorsque le dernier approbateur **valide** la demande, elle passe automatiquement à l'état "Planifié".
 * forcée : Le centre de service a la main pour forcer les changements d'état.
 
@@ -43,4 +44,4 @@ Un mail est également envoyé au CDS lorsqu'un validateur ajoute un commentaire
 
 ## Diagramme  
 
-![diagramme](images/chap_05/workflow.pdf "Connexion"){ width=90% }
+![diagramme](images/chap_05/workflow.png "Connexion"){ width=90% }
