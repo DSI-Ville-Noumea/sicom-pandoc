@@ -1,0 +1,39 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  pandoc_version: 1.16.0.2
+
+jobs:
+  publish:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/${pandoc_version}/pandoc-${pandoc_version}-1-amd64.deb
+          sudo dpkg -i pandoc-${pandoc_version}-1-amd64.deb
+          sudo apt-get update -qq
+          sudo apt-get install texlive-xetex texlive-full texlive-fonts-recommended texlive-fonts-extra texlive-latex-base texlive-latex-extra lmodern
+      - name: Generate PDF and HTML files
+        run: make
+      - name: Upload PDF file to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/pdf/doc_utilisateur.pdf
+          asset_name: doc_utilisateur.pdf
+          tag: ${{ github.ref }}
+      - name: Upload HTML file to release
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/html/doc_utilisateur.html
+          asset_name: doc_utilisateur.html
+          tag: ${{ github.ref }}
